@@ -1,1 +1,36 @@
-[]
+[
+  {
+    "cliente": "echu",
+    "producto": {
+      "nombre": "cucurucho",
+      "precio": 50,
+      "maxGustos": 2
+    },
+    "saboresElegidos": [
+      "Chocolate"
+    ]
+  },
+  {
+    "cliente": "papi",
+    "producto": {
+      "nombre": "cucurucho",
+      "precio": 50,
+      "maxGustos": 2
+    },
+    "saboresElegidos": [
+      "Chocolate"
+    ]
+  },
+  {
+    "cliente": "fernando",
+    "producto": {
+      "nombre": "vasito",
+      "precio": 60,
+      "maxGustos": 2
+    },
+    "saboresElegidos": [
+      "Crema Rusa",
+      "Chocolate Amargo"
+    ]
+  }
+]

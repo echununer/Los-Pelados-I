@@ -26,6 +26,7 @@ let saboresElegidos = seleccionarSabores(sabores, gustos);
 // Guardar pedido
 // COMPLETEN USTEDES
 
+let pedido= JSON.parse(fs.readFileSync("data/pedidos.json", "utf-8"));
 
 let Nuevocliente = {
   cliente,
@@ -33,4 +34,7 @@ let Nuevocliente = {
   saboresElegidos
 }
 
-let pedido = JSON.stringify (fs.writeFileSync("data/pedidos.json", Nuevocliente))
+pedido.push(Nuevocliente)
+
+let pedidosJSON = JSON.stringify(pedido, null, 2);
+fs.writeFileSync("data/pedidos.json", pedidosJSON);
